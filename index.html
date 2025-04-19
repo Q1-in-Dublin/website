@@ -33,12 +33,33 @@
                     <a href="#"><i class="bx bxl-github"></i></a>
                     <a href="#"><i class="bx bxl-linkedin-square"></i></a>
                 </div>
+                <div class="menu-icon">
+                    <i class="bx bx-menu"></i>
+                </div>
             </header>
+            <div class="sidebar">
+                <div class="close-icon">
+                  <i class='bx bx-x' ></i>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square' ></i>/a>
+                </div>
+            </div>
+
             <div class="blackhole-box">
                 <video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
             </div>
             <section class="hero">
-                <div class="hero-info">
+                <div class="hero-info autoBlur">
                     <div class="hero-info-title"><i class="bx bxl-sketch"></i> front-end Developer Portfolio</div>
                     <h1>
                         Providing <span class="gradient">the best</span> Project
@@ -51,15 +72,23 @@
                     <button><i class="bx bx-send">Contact me</i></button>
                 </div>
                 <div class="hero-vid-box">
-                    <video loop autoplay muted plays-inline src="videos/hero-video.mp4" type="video/mp4"></video>
+                    <video
+                        class="autoBlur"
+                        loop
+                        autoplay
+                        muted
+                        plays-inline
+                        src="videos/hero-video.mp4"
+                        type="video/mp4"
+                    ></video>
                 </div>
                 <div class="scroll-down"></div>
             </section>
             <section class="info-section">
-                <h1 class="section-title">Hello, There!</h1>
+                <h1 class="section-title autoDisplay">Hello, Everyone 👋🏻</h1>
                 <div class="info-cards">
                     <div class="card">
-                        <h1>Hi There, I am Q1!</h1>
+                        <h1>Hi There,🙋🏻‍♂️ I am Q1!</h1>
                         <p>
                             With 1+ years of experience, I have honed my skills frontend and backend dev, creating
                             dynamic and resposible web
@@ -92,13 +121,13 @@
                 </div>
             </section>
             <section class="my-projects">
-                <h1 class="section-title">My Projects</h1>
+                <h1 class="section-title autoDisplay">My Projects💻</h1>
                 <div class="project-card">
-                    <div class="project-vidbox">
+                    <div class="project-vidbox autoBlur">
                         <video id="projectVideo1" src="videos/project1.mp4"></video>
                         <div class="hover-sign"></div>
                     </div>
-                    <div class="project-info">
+                    <div class="project-info fadeInRight">
                         <h1>Animated <span class="gradient">Gaming</span> WebSite</h1>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -113,8 +142,10 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-vidbox"><video id="projectVideo2" src="videos/project2.mp4"></video></div>
-                    <div class="project-info">
+                    <div class="project-vidbox autoBlur">
+                        <video id="projectVideo2" src="videos/project2.mp4"></video>
+                    </div>
+                    <div class="project-info fadeInRight">
                         <h1>Modern <span class="gradient">Portfolio</span> WebSite</h1>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -129,8 +160,10 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-vidbox"><video id="projectVideo3" src="videos/project3.mp4"></video></div>
-                    <div class="project-info">
+                    <div class="project-vidbox autoBlur">
+                        <video id="projectVideo3" src="videos/project3.mp4"></video>
+                    </div>
+                    <div class="project-info fadeInRight">
                         <h1>Movie <span class="gradient">Landing</span> Page</h1>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -146,7 +179,7 @@
                 </div>
             </section>
             <section class="skills-section">
-                <h1 class="section-title">My Skills💪🏼</h1>
+                <h1 class="section-title autoDisplay">My Skills💪🏼</h1>
                 <div class="skills-box">
                     <img class="skills-image" src="images/digital brain.png" alt="skills-image" />
 
@@ -183,6 +216,34 @@
                     </div>
                 </div>
             </section>
+            <section class="contact-section">
+                <h1 class="section-title autoDisplay">Let's talk😁</h1>
+                <div class="social-box autoBlur">
+                    <a href=""><i class="bx bxs-phone-call">+353 083 334 4674</i></a>
+                    <a href=""><i class="bx bxl-telegram">Contact Example.com</i></a
+                    ><a href=""><i class="bx bxl-linkedin-square">Contact Example.com</i></a>
+                    <div class="social-icons">
+                        <a href=""><i class="bx bxl-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <p>
+                        Whatever You're looking to build a new website, improve your exisiting platform, or bring a
+                        unique project to file. I am here to help
+                    </p>
+                    <p>Full Name</p>
+                    <input type="text" placeholder="Your Full Name" />
+                    <p>Email Address</p>
+                    <input type="text" placeholder="Your Email" />
+                    <p>Your Message</p>
+                    <input type="text " placeholder="Share your thoughts" />
+                    <button><i class="bx bx-send"></i>Send</button>
+                </div>
+            </section>
+            <footer>
+                <h1>CopyRight ⓒ Q1, Made with Passion🔥 by Q1</h1>
+            </footer>
         </div>
         <script src="app.js"></script>
     </body>
