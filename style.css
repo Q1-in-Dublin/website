@@ -8,18 +8,17 @@ body {
 .container {
     position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
 }
 
 .back-vid {
     position: fixed;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
     mix-blend-mode: lighten;
 }
 header {
@@ -95,7 +94,7 @@ header ul a {
     position: absolute;
     top: 0;
     width: 100%;
-    justify-content: center;
+    height: 100vh;
 }
 .blackhole-box video {
     width: 100%;
@@ -108,6 +107,7 @@ header ul a {
     height: 100vh;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .hero-info {
     position: absolute;
@@ -242,7 +242,9 @@ header ul a {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    min-height: 100vh;
 }
 .section-title {
     font-size: 40px;
@@ -348,13 +350,12 @@ header ul a {
 .my-projects {
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 50px;
     align-items: center;
     position: relative;
     width: 80%;
-    height: 100vh;
-    margin-top: 200px;
-    margin-bottom: 700px;
+    min-height: 100vh;
+    margin-bottom: 100px;
 }
 .project-card {
     display: flex;
@@ -457,6 +458,108 @@ header ul a {
 }
 .hover-sign.active {
     display: none;
+}
+
+/* Skill Section */
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 100px;
+}
+.skills-box {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.skills-image {
+    width: 70%;
+    mix-blend-mode: lighten;
+    opacity: 0.7;
+}
+.designer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    top: 25%;
+    left: 5%;
+    max-width: 300px;
+}
+.coder {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    top: 25%;
+    right: 5%;
+    max-width: 300px;
+}
+.skills-box h1 {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+.skills-box p {
+    line-height: 23px;
+}
+/* Slider */
+.slider {
+    position: absolute;
+    bottom: 5%;
+    right: 20%;
+    width: 60%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+    mix-blend-mode: difference;
+    opacity: 0.8;
+}
+.slider .list {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+.slider .list .item {
+    width: var(--width);
+    height: var(--height);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.slider .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 30px));
+    }
+}
+.slider:hover .list {
+    animation-play-state: paused;
+}
+.slider:hover .item {
+    filter: grayscale(1);
+}
+.slider .item:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
 }
 @media (max-aspect-ratio: 16/9) {
     .back-vid {
